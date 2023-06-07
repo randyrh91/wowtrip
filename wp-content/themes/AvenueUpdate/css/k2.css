@@ -1,0 +1,1074 @@
+#k2Container {
+    padding-bottom: 24px;
+
+}
+
+.k2FeedIcon a,
+a.k2FeedIcon {
+    background: url('../images/k2/rss.png') no-repeat 0 0;
+    color: #999;
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 0 0 32px
+}
+
+.k2FeedIcon a:hover,
+a:hover.k2FeedIcon {
+    color: #222
+}
+
+.k2FeedIcon a {
+    float: none
+}
+
+article header ul li {
+    color: #999;
+    float: left;
+    font-size: 12px;
+    margin-right: 16px
+}
+
+h1 > sup {
+    background: #EF8217;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 1px 3px;
+    top: -1.5em
+}
+
+ul li.itemResizer a {
+    background: url('../images/k2/fonts.png') no-repeat 100% 5px;
+    display: inline-block;
+    height: 15px;
+    text-indent: -9999em;
+    width: 15px
+}
+
+ul li.itemResizer span {
+    padding: 0 6px 0 0
+}
+
+ul li.itemResizer #fontIncrease {
+    background-position: 0 5px
+}
+
+.smallerFontSize {
+    font-size: 90% !important
+}
+
+.largerFontSize {
+    font-size: 115% !important
+}
+
+.itemImageBlock {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.itemImage {
+    display: block;
+    line-height: 0;
+    margin: 0 0 24px;
+    overflow: hidden
+}
+
+.itemImageBlock img {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    padding: 0
+}
+
+.itemImageBlock img:hover {
+    -moz-box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.4)
+}
+
+.itemImageCaption {
+    border-bottom: 1px solid #eee;
+    color: #999;
+    display: block;
+    font-size: 11px;
+    margin-bottom: 24px;
+    padding: 9px 0
+}
+
+.itemImageBlock > a {
+    display: block;
+}
+
+.itemExtraFields ul li span.itemExtraFieldsValue,
+.itemLinks .itemCategory a,
+.itemLinks .itemAttachmentsBlock ul,
+.itemLinks .itemTagsBlock ul {
+    display: block;
+    margin: 0 0 0 27%
+}
+
+.itemBottom {
+    clear: both;
+    margin: 0 0 6px
+}
+
+.itemLinks {
+    clear: both;
+    margin: 36px 0
+}
+
+.itemLinks .itemTagsBlock,
+.itemLinks .itemSocialSharing {
+    clear: both;
+    margin: 6px 0 12px;
+    overflow: hidden
+}
+
+.itemTagsBlock p {
+    margin: 0 0 9px
+}
+
+.itemTagsBlock a {
+    color: #999;
+    font-style: italic
+}
+
+.itemSocialSharing {
+    border-top: 1px solid #e5e5e5;
+    float: left;
+    overflow: visible !important;
+    padding: 20px 0;
+    width: 100%
+}
+
+.itemExtraFields {
+    font-size: 12px;
+    margin: 8px 0 24px
+}
+
+.itemExtraFields h3 {
+    font-size: 18px;
+    padding: 0 0 8px
+}
+
+small.itemDateModified {
+    color: #999;
+    display: block;
+    font-style: italic;
+    text-align: right
+}
+
+.itemRatingForm {
+    display: block;
+    line-height: 25px;
+    vertical-align: middle
+}
+
+.itemRatingLog {
+    color: #999;
+    float: right;
+    font-size: 11px;
+    line-height: 25px;
+    margin: -2px 0 0;
+    padding: 0 0 0 4px
+}
+
+span#formLog {
+    background: #418cd1;
+    clear: both;
+    color: #FFF;
+    display: block;
+    float: none;
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+    top: 10px
+}
+
+.itemRatingForm .formLogLoading {
+    height: 25px;
+    padding: 0 0 0 20px
+}
+
+.itemRatingList,
+.itemRatingList a:hover,
+.itemRatingList .itemCurrentRating {
+    background: url('../images/k2/star.png') left -1000px repeat-x
+}
+
+.itemRatingList {
+    background-position: left top;
+    float: right;
+    height: 25px;
+    list-style: none;
+    margin: 9px 0 0 !important;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 124px
+}
+
+.itemRatingList li {
+    background: none;
+    border: none !important;
+    display: inline;
+    padding: 0
+}
+
+.itemRatingList a,
+.itemRatingList .itemCurrentRating {
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    left: 0;
+    line-height: 25px;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    text-indent: -1000px;
+    top: 0
+}
+
+.itemRatingList a:hover {
+    background-position: left center
+}
+
+.itemRatingList a.one-star {
+    width: 20%;
+    z-index: 6
+}
+
+.itemRatingList a.two-stars {
+    width: 40%;
+    z-index: 5
+}
+
+.itemRatingList a.three-stars {
+    width: 60%;
+    z-index: 4
+}
+
+.itemRatingList a.four-stars {
+    width: 80%;
+    z-index: 3
+}
+
+.itemRatingList a.five-stars {
+    width: 100%;
+    z-index: 2
+}
+
+.itemRatingList .itemCurrentRating {
+    background-position: 0 bottom;
+    margin: 0;
+    padding: 0;
+    z-index: 1
+}
+
+.k2TagCloudBlock a {
+    background: url(../images/style1/tag_bullets.png) no-repeat 0 8px;
+    display: block;
+    line-height: 1.8;
+    padding-left: 20px
+}
+
+.k2TagCloudBlock a:hover {
+    background-position: 0 -303px
+}
+
+.itemExtraFields ul li {
+    border-top: 1px solid #eee;
+    list-style: none;
+    padding: 5px 0
+}
+
+.itemLinks ul li {
+    list-style: none
+}
+
+.itemAttachmentsBlock {
+    background: url('../images/style1/typography/tips.png') no-repeat 16px 8px #FFFEF4;
+    border: 1px solid #EAE8CC;
+    margin: 0 0 48px;
+    min-height: 38px;
+    padding: 10px 10px 12px 80px
+}
+
+.itemLinks .itemAttachmentsBlock ul li a {
+    color: #222;
+    font-weight: 700
+}
+
+.itemLinks .itemAttachmentsBlock ul li a span {
+    color: #676767;
+    font-size: 11px;
+    font-weight: 400
+}
+
+.itemAuthorBlock {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    float: left
+}
+
+.itemAuthorBlock > .gkAvatar {
+    float: left;
+    max-width: 80px;
+    padding: 12px
+}
+
+.itemAuthorBlock .itemAuthorDetails {
+    color: #999;
+    line-height: 1.7;
+    margin: 0 24px 0 130px
+}
+
+.itemAuthorBlock .itemAuthorDetails p {
+    margin: .5em 0 .8em
+}
+
+.itemAuthorURL {
+    display: block;
+    margin: 6px 0 0
+}
+
+.itemAuthorData {
+    background: #222;
+    margin: -10px -20px 34px -21px;
+    overflow: hidden;
+    padding: 16px
+}
+
+.itemAuthorData h3 {
+    color: #222;
+    font-size: 20px
+}
+
+.userView .itemAuthorData h3 {
+    color: #fff
+}
+
+.userView .itemAuthorData a {
+    color: #ddd
+}
+
+.userView .itemAuthorData a:hover {
+    color: #EF8217
+}
+
+.itemAuthBlock a {
+    color: #999
+}
+
+.itemAuthBlock h4 a {
+    color: #363636
+}
+
+.itemAuthBlock img {
+    max-width: 40px !important
+}
+
+.itemAuthorContent h3 {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 15px;
+    text-transform: uppercase
+}
+
+.itemAuthorContent {
+    clear: both;
+    margin: 0 0 32px;
+    overflow: hidden
+}
+
+.itemAuthorContent ul {
+    font-size: 13px
+}
+
+.itemAuthorContent ul li {
+    line-height: 1.2;
+    list-style: inside;
+    padding: 5px 0
+}
+
+.itemAuthorContent ul li a,
+.itemNavigation {
+    clear: both;
+    color: #7D7B7A;
+    font-size: 12px;
+    padding: 0
+}
+
+.itemComments h3 {
+    border-top: 1px solid #E5E5E5;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 24px 0 0
+}
+
+.commentLink {
+    color: #EF8217;
+    float: right
+}
+
+.itemCommentsAuthor {
+    font-size: 13px;
+    font-weight: 700
+}
+
+.itemCommentsForm label {
+    clear: both;
+    display: block;
+    padding: 12px 0 3px
+}
+
+.itemCommentsForm textarea.inputbox {
+    height: 200px
+}
+
+.itemCommentsForm .inputbox {
+    width: 400px
+}
+
+.itemCommentsForm #submitCommentButton {
+    clear: both;
+    margin: 20px 0 0
+}
+
+.itemCommentsForm .itemCommentsFormNotes {
+    color: #999;
+    font-size: 10px;
+    font-style: italic;
+    margin: 0 0 36px
+}
+
+.itemComments p {
+    margin: .5em 0
+}
+
+.itemComments .itemCommentsList,
+.itemComments .itemCommentsForm {
+    clear: both;
+    padding: 0 0 12px
+}
+
+.itemComments .itemCommentsList li {
+    border-top: 1px solid #e5e5e5;
+    margin: 24px 0 0;
+    padding: 24px 0 0
+}
+
+.itemComments .itemCommentsList li:first-child {
+    border: none
+}
+
+.itemComments .itemCommentsList li > div {
+    margin: 0 0 0 66px;
+    padding-left: 10px
+}
+
+.itemComments .itemCommentsList li > span.gkAvatar {
+    float: left;
+    margin: 2px 0 0
+}
+
+.itemComments .itemCommentsList li div div span {
+    color: #999;
+    font-size: 11px;
+    margin-right: 16px
+}
+
+.userView article,
+.genericView article,
+.itemList article {
+    clear: both;
+    /*margin-bottom: 24px*/
+}
+
+.subCategoryContainer {
+    float: left;
+    margin-bottom: 32px
+}
+
+.subCategoryContainer .subCategory {
+    margin: 0 32px 24px 0
+}
+
+.itemList article {
+    border: 1px solid #EF8217;
+    padding-bottom: 24px;
+    margin-left : 30px;
+    margin-bottom: 30px;
+    background-color: #fdfdfd;
+}
+
+#itemListLinks ul {
+    margin: 12px 0 0
+}
+
+#itemListLinks li {
+    background: url('../images/style1/typography/bullet-square2.png') no-repeat 0 6px;
+    font-size: 13px;
+    padding-left: 24px
+}
+
+#itemListLinks a {
+    color: #737373
+}
+
+.k2LatestCommentsBlock .k2FeedIcon {
+    margin-top: 16px
+}
+
+.k2LatestCommentsBlock ul li,
+.k2TopCommentersBlock ul li {
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+    line-height: 1.5 !important;
+    list-style: none !important;
+    padding: 12px 0 !important
+}
+
+.k2LatestCommentsBlock ul li p {
+    margin: 0.5em 0
+}
+
+.k2LatestCommentsBlock div,
+.k2TopCommentersBlock div {
+    padding-left: 16px
+}
+
+.k2LatestCommentsBlock p,
+.k2LatestCommentsBlock p,
+.k2LatestCommentsBlock p a,
+.k2TopCommentersBlock p a {
+    color: #777;
+    font-size: 12px;
+}
+
+.k2LatestCommentsBlock p a:hover,
+.k2TopCommentersBlock p a:hover {
+    color: #363636;
+
+}
+
+.k2LatestCommentsBlock div span,
+.k2TopCommentersBlock div span {
+    color: #999;
+    display: block;
+    font-size: 11px;
+}
+
+.k2Avatar {
+    display: block !important;
+    float: left;
+    margin: 0 24px 0 0
+}
+
+.lcAvatar {
+    margin: 4px 0 0
+}
+
+.lcUsername {
+    font-size: 12px;
+    font-weight: 600
+}
+
+.k2CommentItem div {
+    margin-bottom: 6px;
+    padding-bottom: 2px
+}
+
+.k2CommentItem span.lcItemTitle {
+    color: #2f3336;
+    display: block;
+    font-weight: 600;
+    padding: 0 0 9px
+}
+
+.k2CommentItem a {
+    color: #888
+}
+
+.k2CommentItem span.lcCommentDate {
+    color: #999;
+    display: block;
+    font-size: 10px
+}
+
+.k2AuthorsListBlock ul li {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 12px 0
+}
+
+.k2AuthorsListBlock ul li a.abAuthorLatestItem {
+    clear: both;
+    display: block;
+    font-size: 11px;
+    line-height: 14px;
+    margin: 12px 0 0;
+    padding: 0 0 0 12px
+}
+
+.k2AuthorsListBlock ul li a.abAuthorLatestItem span {
+    color: #777;
+    display: block;
+    font-size: 10px
+}
+
+#gkRight .k2Avatar,
+#gkLeft .k2Avatar {
+    border-color: #fff
+}
+
+.tcUsername {
+    color: #333;
+    font-size: 18px
+}
+
+.tcLatestComment {
+    color: #737373;
+    display: block;
+    font-size: 13px;
+    margin: 6px 0
+}
+
+.tcLatestCommentDate {
+    color: #999;
+    display: block;
+    font-size: 11px
+}
+
+div .k2ItemsBlock ul {
+    margin-right: -20px
+}
+
+div .k2ItemsBlock ul li {
+    background: none !important;
+    list-style: none !important;
+    margin: 0 0 12px;
+    padding: 12px 20px 12px 0 !important
+}
+
+a.moduleItemTitle {
+    color: #2f3336;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px
+}
+
+.moduleItemAuthor {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 11px;
+    margin: 0 0 16px;
+    overflow: hidden
+}
+
+.moduleItemAuthor a {
+    color: #2f3336;
+    display: block;
+    font: bold 12px Verdana, Geneva, sans-serif;
+    padding: 0 0 12px
+}
+
+.moduleItemIntrotext {
+    display: block;
+    line-height: 1.6;
+    padding: 12px 0 0
+}
+
+.moduleItemIntrotext a.moduleItemImage img {
+    float: left;
+    margin: 4px 0;
+    overflow: hidden
+}
+
+.moduleItemDateCreated,
+.moduleItemCategory {
+    color: #999;
+    font: normal 10px Verdana, Geneva, sans-serif
+}
+
+.moduleItemExtraFields ul li span.moduleItemExtraFieldsLabel {
+    display: block;
+    float: left;
+    font-weight: 700;
+    margin: 0 4px 0 0;
+    width: 30%
+}
+
+.moduleItemTags,
+.moduleAttachments {
+    border-top: 1px solid #e5e5e5;
+    margin: 12px 0 0;
+    overflow: hidden;
+    padding: 12px 0 0
+}
+
+.moduleItemTags strong {
+    color: #2f3336;
+    font-size: 12px
+}
+
+a.moduleItemComments {
+    font-size: 12px
+}
+
+a:hover.moduleItemComments {
+    background-position: 0 100%;
+    color: #fff
+}
+
+.k2ItemsBlock ul li span.moduleItemHits {
+    font-size: 90%
+}
+
+.moduleItemImage {
+    display: block;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 100%
+}
+
+.moduleItemReadMore {
+    clear: both;
+    display: block
+}
+
+.k2LoginBlock fieldset.input {
+    margin: 0;
+    padding: 0 0 8px
+}
+
+.k2LoginBlock fieldset.input p {
+    margin: 0;
+    padding: 0 0 4px
+}
+
+.k2LoginBlock fieldset.input p#form-login-remember label,
+.k2LoginBlock fieldset.input p#form-login-remember input {
+    display: inline
+}
+
+.k2UserBlock p.ubGreeting {
+    border-bottom: 1px dotted #eee
+}
+
+.k2UserBlock .k2UserBlockDetails span.ubName {
+    display: block;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.k2BreadcrumbsBlock span.bcTitle {
+    color: #999;
+    padding: 0 4px 0 0
+}
+
+.k2BreadcrumbsBlock span.bcSeparator {
+    font-size: 14px;
+    padding: 0 4px
+}
+
+.k2CalendarBlock {
+    margin: 12px 0
+}
+
+.k2CalendarLoader {
+    background: #fff
+}
+
+.k2CalendarBlock table.calendar {
+    background: #fff;
+    border-collapse: collapse;
+    border-left: 1px solid #eee;
+    margin: 0 auto;
+    width: 100%
+}
+
+.k2CalendarBlock table.calendar tr td {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle
+}
+
+.k2CalendarBlock table.calendar tr td.calendarNavMonthPrev,
+.k2CalendarBlock table.calendar tr td.calendarNavMonthNext {
+    background: #fff;
+    font-size: 15px !important;
+    text-align: center
+}
+
+.k2CalendarBlock table.calendar tr td.calendarDayName {
+    background: #f5f5f5;
+    color: #333;
+    font-size: 11px;
+    font-weight: 600;
+    width: 14.2%
+}
+
+.k2CalendarBlock table.calendar tr td.calendarDateEmpty {
+    background: #fbfbfb
+}
+
+.k2CalendarBlock table.calendar tr td.calendarDate {
+    font-size: 11px
+}
+
+.k2CalendarBlock table.calendar tr td.calendarDateLinked a {
+    display: block;
+    padding: 2px
+}
+
+.k2CalendarBlock table.calendar tr td.calendarDateLinked a:hover {
+    background: #363636;
+    color: #fff !important;
+    display: block;
+    padding: 2px
+}
+
+.k2CalendarBlock table.calendar tr td.calendarToday {
+    background: #EF8217;
+    color: #fff
+}
+
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked {
+    background: #f5f5f5;
+    padding: 0
+}
+
+table.calendar tr td.calendarTodayLinked a {
+    color: #EF8217;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px
+}
+
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked a:hover {
+    background: #252525;
+    color: #fff;
+    display: block;
+    padding: 2px
+}
+
+.calendarNavLink {
+    color: #EF8217
+}
+
+.calendarCurrentMonth {
+    color: #363636;
+    font-size: 12px;
+    font-weight: bold
+}
+
+.gkColumns > aside .k2CalendarBlock table.calendar,
+.gkColumns > aside .k2CalendarBlock table.calendar tr td {
+    background: none;
+    border: none;
+    color: #fff
+}
+
+.gkColumns > aside .k2CalendarBlock table.calendar tr td.calendarDateLinked a {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.gkColumns > aside .calendarNavMonthPrev,
+.gkColumns > aside .calendarCurrentMonth,
+.gkColumns > aside .calendarNavMonthNext {
+    background: #2f3336 !important
+}
+
+.k2CategorySelectBlock form select {
+    width: auto
+}
+
+#k2Container .gsc-control {
+    width: 100%
+}
+
+span.ubUserEmail {
+    display: inline-block;
+    height: 16px;
+    margin: 0 2px 0 0;
+    overflow: hidden;
+    padding: 0;
+    width: 16px
+}
+
+span.ubUserEmail a {
+    display: inline-block;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    width: 16px
+}
+
+.k2UsersBlock ul li h3 {
+    clear: both;
+    margin: 8px 0 0;
+    padding: 0
+}
+
+.catCounter {
+    font-size: 11px;
+    font-weight: 400
+}
+
+article header .itemRatingBlock > div {
+    margin: 3px 0 0
+}
+
+.itemCommentsPagination ul li {
+    display: inline-block;
+    font-size: 80%;
+    margin: 0 3px
+}
+
+.itemsContainerWrap time + header,
+.cols-2 time + header,
+.cols-3 time + header,
+.cols-4 time + header {
+    padding-left: 0 !important
+}
+
+.itemsContainer .itemsContainerWrap,
+.itemContainer .itemsContainerWrap {
+    margin: 0 20px 0 20px
+}
+
+.itemsContainer:first-child .itemsContainerWrap,
+.itemContainer:first-child .itemsContainerWrap {
+    margin: 0 !important
+}
+
+.itemAsideInfo {
+    width: 130px
+}
+
+.itemAsideInfo + .itemBody {
+    margin-left: 160px
+}
+
+.itemImage + .itemImageCaption,
+#gkBreadcrumb + #gkMainbody div.itemAuthorData {
+    margin-top: -24px
+}
+
+.itemBottom .itemRatingBlock span,
+.itemBottom .itemRatingBlock .itemRatingList,
+.itemBottom .itemRatingBlock .itemRatingForm ul.itemRatingList li,
+.itemLinks .itemCategory span,
+.itemLinks .itemAttachmentsBlock > span,
+.itemExtraFields ul li span.itemExtraFieldsLabel,
+.latestView .itemsContainer,
+.itemLinks .itemSocialSharing > div,
+.itemCommentsForm textarea,
+.itemCommentsForm .inputbox,
+.itemContainer {
+    float: left
+}
+
+.itemRatingBlock,
+.itemListSubCategories {
+    overflow: hidden
+}
+
+.itemAuthorBlock > .gkAvatar > img,
+.itemComments .itemCommentsList li > span > img,
+.k2LoginBlock fieldset.input p label,
+.k2LoginBlock fieldset.input p input {
+    display: block
+}
+
+.itemAuthorData a,
+.itemAuthorContent ul li a:hover,
+#itemListLinks a:hover,
+.k2CommentItem span a,
+.k2CommentItem a:hover {
+    color: #2f3336
+}
+
+.itemAuthorData .itemAuthorContent,
+itemContainerLast article {
+    margin: 0
+}
+
+#itemCommentsAnchor,
+.clr,
+#itemListLinks,
+.moduleItemAuthor p {
+    clear: both
+}
+
+.itemBackToTop,
+.moduleItemTags a {
+    float: right
+}
+
+.k2CalendarBlock table.calendar tr td.calendarDateLinked,
+.itemContainerLast:first-child .itemImageBlock,
+.clr + .itemContainerLast .itemImageBlock {
+    padding: 0
+}
+
+#k2Container .gsc-branding-text,
+.itemCommentsPagination ul {
+    text-align: right
+}
+
+#k2Container .gs-visibleUrl,
+a.ubUserFeedIcon span,
+a.ubUserFeedIcon:hover span,
+a.ubUserURL span,
+a.ubUserURL:hover span,
+article header .itemRatingBlock > span {
+    display: none
+}
+
+a.ubUserFeedIcon,
+a.ubUserFeedIcon:hover,
+a.ubUserURL,
+a.ubUserURL:hover {
+    display: inline-block;
+    height: 16px;
+    margin: 0 2px 0 0;
+    padding: 0;
+    width: 16px
+}
+
+.itemsContainerWrap3 h2 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.itemIntroText ol,
+.itemFullText ol {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.itemAuthorContent {
+    clear: both;
+}

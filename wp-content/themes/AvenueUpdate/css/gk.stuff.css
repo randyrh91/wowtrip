@@ -1,0 +1,793 @@
+/*
+#------------------------------------------------------------------------
+# News - December Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+ 
+/*
+ * News Show Pro GK4
+ */
+.nsp { position: relative }
+.nspMain { overflow: hidden }
+.nspBotInterface,
+.nspTopInterface {
+    overflow: hidden;
+    clear: both;
+}
+.nspBotInterface div,
+.nspTopInterface div { float: right }
+.nsp .nspTopInterface div {
+    position: absolute;
+    right: 16px;
+    padding: 0 3px;
+    top: 16px;
+    z-index: 10;
+}
+.nspPagination {
+    list-style-type: none !important;
+    margin: 5px 0 0 !important;
+    padding: 0 !important;
+    float: left;
+}
+.nspPagination li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 1px 3px 0 1px!important;
+    background: #d6d6d6;
+    border: none!important;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0!important;
+    text-indent: -999em;
+    cursor: pointer;
+}
+.nspPagination li:hover,
+.nspPagination li.active { 
+	background: #EF8217;
+	height: 10px;
+	margin: 0 2px 0 0!important;
+	width: 10px;
+}
+.nspNext,
+.nspPrev {
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 3px 0 0 4px;
+    background: url('../images/style1/nsp_interface.png') no-repeat -14px 0;
+    text-indent: -999em;
+    cursor: pointer;
+}
+.nspPrev { background-position: 0 0; }
+.nspNext:hover,
+.nspPrev:hover { background-position: -14px -14px; }
+.nspPrev:hover { background-position: 0 -14px; }
+.nspCounter {
+    float: left;
+    margin: 0 0 0 8px;
+    padding: 1px 4px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #878787;
+    font-size: 9px;
+    cursor: pointer;
+}
+.nspArts { 
+	overflow: hidden; 
+}
+.nspArtPage { 
+	float: left; 
+}
+.nspArt {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+.nspArt div { overflow: hidden }
+h4.nspHeader {
+    color: #363636;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.nspArt h4.nspHeader a {
+    color: #363636;
+    text-decoration: none;
+}
+.nspArt h4.nspHeader a:active,
+.nspArt h4.nspHeader a:focus,
+.nspArt h4.nspHeader a:hover { color: #EF8217 }
+.nspArt a {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.nspArt img.nspImage {
+    border: none;
+    
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.nspArt img.nspImage:hover {
+    -webkit-transform: scale(1.15) rotate(-1.5deg);
+    -moz-transform: scale(1.15) rotate(-1.5deg);
+    -ms-transform: scale(1.15) rotate(-1.5deg);
+    -o-transform: scale(1.15) rotate(-1.5deg);
+    transform: scale(1.15) rotate(-1.5deg);
+}
+.nspArt .nspImageWrapper { overflow: hidden }
+.nspArt p.nspText {
+    color: #777;
+    float: none;
+    font-size: 12px;
+    margin: 0;
+}
+.nspArt p.nspText + .readon { 
+	margin-top: 32px; 
+}
+.nspArt p.nspText + .nspInfo { 
+	margin-top: 12px; 
+}
+.nspArt p.nspInfo {
+    color: #999;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.0;
+    margin: 0 0 5px 0;
+}
+.nspArt p.nspInfo a {
+    color: #999;
+    padding-left: 8px;
+}
+.nspArt p.nspInfo a:active,
+.nspArt p.nspInfo a:focus,
+.nspArt p.nspInfo a:hover { color: #EF8217 }
+.nspArt .tleft { text-align: left }
+.nspArt .tright { text-align: right }
+.nspArt .tcenter { text-align: center }
+.nspArt .tjustify { text-align: justify }
+.nspArt .fleft { float: left }
+.nspArt .fright { float: right }
+.nspArt .fnone {
+    clear: both;
+    width: 100%;
+    float: none;
+}
+.readon.left,
+.readon.right,
+.readon.center { clear: both }
+.readon.left { float: left }
+.readon.right { float: right }
+.readon.center {
+    display: inline;
+    float: none;
+}
+.nspList { float: left }
+.nspLinks .nspLinkScroll1 div ul {
+    padding: 0 !important;
+    list-style-type: none !important;
+}
+.nspLinks .nspLinkScroll1 div ul li {
+    border-top: 1px solid #e5e5e5;
+    margin: 0 !important;
+    padding: 14px 0;
+}
+.nspLinks ul li h4 {
+    color: #2f3133;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+}
+.nspLinks ul li h4 a { 
+	text-decoration: none; 
+}
+.nspLinks ul li p {
+    font-size: 12px;
+    line-height: 22px;
+    margin: 0;
+}
+/* positioning */
+.nspArts.left { float: right }
+.nspLinksWrap.left { float: left }
+.nspArts.right { float: left }
+.nspLinksWrap.right { float: right }
+/* make element unvisible */
+.nspMain .unvisible {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+/* font-size classes */
+.nspFs80 { font-size: 80% }
+.nspFs90 { font-size: 90% }
+.nspFs100 { font-size: 100% }
+.nspFs110 { font-size: 110% }
+.nspFs120 { font-size: 120% }
+.nspFs130 { font-size: 130% }
+.nspFs140 { font-size: 140% }
+.nspFs150 { font-size: 150% }
+.nspFs160 { font-size: 160% }
+.nspFs170 { font-size: 170% }
+.nspFs180 { font-size: 180% }
+.nspFs190 { font-size: 190% }
+.nspFs200 { font-size: 200% }
+/* New responsive layout */
+.gkResponsive { line-height: 1 }
+.gkResponsive img.nspImage,
+img.nspImage.gkResponsive {
+    width: 100% !important;
+    height: auto;
+}
+.gkResponsive a,
+a.gkResponsive {
+    display: block;
+    position: relative;
+}
+.gkResponsive { position: relative }
+.nspArt img.nspImage { max-width: 100% }
+.nspArtScroll1,
+.nspLinkScroll1 { overflow: hidden; width: 100%; }
+.nspPages1 { width: 100% }
+.nspPages2 { width: 200% }
+.nspPages3 { width: 300% }
+.nspPages4 { width: 400% }
+.nspPages5 { width: 500% }
+.nspPages6 { width: 600% }
+.nspPages7 { width: 700% }
+.nspPages8 { width: 800% }
+.nspPages9 { width: 900% }
+.nspPages10 { width: 1000% }
+.nspCol1 { width: 100% }
+.nspCol2 { width: 50% }
+.nspCol3 { width: 33.3% }
+.nspCol4 { width: 25% }
+.nspCol5 { width: 20% }
+.nspCol6 { width: 16.66% }
+.nspCol7 { width: 14.285% }
+.nspCol8 { width: 12.5% }
+.nspCol9 { width: 11.1% }
+.nspCol10 { width: 10% }
+.nspCol11 { width: 9.09% }
+.nspCol12 { width: 8.33% }
+.nspCol13 { width: 7.69% }
+.nspCol14 { width: 7.14% }
+.nspCol15 { width: 6.66% }
+.nspCol16 { width: 6.25% }
+.nspCol17 { width: 5.88% }
+.nspCol18 { width: 5.55% }
+.nspCol19 { width: 5.26% }
+.nspCol20 { width: 5% }
+
+/* Suffix dark */
+.dark .nspArt p.nspText { color: #999 }
+.dark .nspArt p.nspInfo { color: #ddd }
+.dark .nspArt p.nspInfo a { color: #fff }
+.dark .nspArt p.nspInfo a:active,
+.dark .nspArt p.nspInfo a:focus,
+.dark .nspArt p.nspInfo a:hover { color: #ddd }
+.dark .nspLinks ul li h4 a { color: #fff }
+.dark .nspLinks ul li h4 a:active,
+.dark .nspLinks ul li h4 a:focus,
+.dark .nspLinks ul li h4 a:hover { color: #EF8217 }
+.dark .nspArt h4.nspHeader a { color: #fff }
+.dark .nspArt h4.nspHeader a:active,
+.dark .nspArt h4.nspHeader a:focus,
+.dark .nspArt h4.nspHeader a:hover { color: #EF8217 }
+.dark .nspPagination li { background: #ccc }
+.dark .nspPagination li:hover,
+.dark .nspPagination li.active { background: #fff }
+.dark .nspNext,
+.dark .nspPrev { background: url('../images/style1/nsp_interface.png') no-repeat -17px 0 }
+.dark .nspPrev { background-position: 0 0 }
+.dark .nspNext:hover,
+.dark .nspPrev:hover { background-position: -17px -22px }
+.dark .nspPrev:hover { background-position: 0 -22px }
+
+/* Suffix header */
+.header .nspLinks ul li h4 {
+	font-size: 13px;
+}
+.header .nspLinks ul li h4 a {
+	color: #333;
+}
+.header .nspLinks ul li p {
+	font-size: 11px;
+}
+.box.header .nspBotInterface div {
+	float: none;
+	margin-top: 12px;
+	text-align: center;
+}
+.box.header .nspBotInterface div ul {
+	display: inline-block;
+	float: none;
+}
+.box.header .nspImageWrapper {
+	position: relative;
+}
+.box.header .nspImageWrapper h4 {
+	background: #1c1c1c;
+	bottom: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-size: 22px;
+	margin: 0;
+	padding: 8px 14px;
+	position: absolute;
+	-webkit-transition: background .3s ease-out;
+	   -moz-transition: background .3s ease-out;
+	    -ms-transition: background .3s ease-out;
+	     -o-transition: background .3s ease-out;
+	        transition: background .3s ease-out;
+}
+.box.header .nspImageWrapper h4 a {
+	color: #fff;
+}
+
+.box.header .nspImageWrapper h4:hover {
+	background: #EF8217;
+}
+
+.box.header .nspImageWrapper h4 a:active,
+.box.header .nspImageWrapper h4 a:focus,
+.box.header .nspImageWrapper h4 a:hover {
+	color: #fff;
+}
+
+.box.header .nspLinks .nspLinkScroll1 div ul li {
+   	margin: 0 10px!important;
+    padding: 14px 0!important;
+    -webkit-transition: all .3s ease-out;
+       -moz-transition: all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+         -o-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+}
+
+.box.header .nspLinks .nspLinkScroll1 div ul li:hover {
+   	background: #EF8217;
+   	color: #fff;
+   	margin: 0!important;
+    padding: 14px 10px!important;
+}
+
+.box.header .nspLinks .nspLinkScroll1 div ul li:hover h4,
+.box.header .nspLinks .nspLinkScroll1 div ul li:hover h4 a {
+	color: #fff;
+}
+
+/* Suffix arrow */
+.arrow .nspLinks .nspLinkScroll1 div ul li {
+	background: transparent url('../images/arrow_bullet.png') no-repeat 0 3px;
+	border: none;
+	padding: 0 0 16px 20px;
+}
+.arrow .nspHeader {
+	font-size: 18px;
+}
+
+/* Suffix bigtitle */
+.bigtitle p.nspInfo {
+	font-size: 12px;
+}
+
+.bigtitle .nspHeader {
+	font-size: 20px;
+}
+
+.bigtitle p.nspText {
+	font-size: 14px;
+}
+
+.bigtitle .nspArt {
+	border-top: 1px solid #e5e5e5;
+}
+
+.bigtitle .nspArt:first-child {
+	border-top: none;
+}
+
+.bigtitle .nspTopInterface div {
+    position: absolute;
+    right: 16px!important;
+    padding: 0 3px;
+    top: 24px!important;
+}
+
+
+/* Suffix headlines */
+.box.headlines .nspLinks .nspLinkScroll1 div ul li {
+	border-top: none;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 20px 0;
+}
+
+.box.headlines .nspLinks .nspLinkScroll1 div ul li:hover {
+	background: #f8f8f8;
+}
+
+.box.headlines .nspBotInterface div {
+	float: none;
+	margin-top: 12px;
+	text-align: center;
+}
+
+.box.headlines .nspBotInterface div ul {
+	display: inline-block;
+	float: none;
+}
+
+/* Suffix nsphover */
+.nsphover .content {
+	margin: 0 -12px;
+}
+
+.nsphover .nspImageWrapper {
+	position: relative;
+}
+
+.nsphover .nspInfo2 {
+	background: #EF8217;
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	left: 0;
+	line-height: 12px;
+	margin: 0;	
+	padding: 12px 14px;
+	position: absolute;
+	text-transform: uppercase;
+	top: 0;
+}
+
+.nsphover .nspInfo2 a {
+	color: #fff!important;
+	margin: 0!important;
+	padding: 0!important;
+}
+
+.nsphover .nspInfo2 a:hover,
+.nsphover .nspInfo2 a:focus,
+.nsphover .nspInfo2 a:active {
+	color: #ddd!important;
+}
+
+.nsphover .nspArt {
+	border: none!important;
+	margin: 26px 0 0 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.nsphover .nspText {
+	bottom: -200px;
+	position: absolute;
+}
+
+.nsphover .nspHoverOverlay {
+	background: #EF8217;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	height: 600px;
+	margin: 0 15px 0 0;
+	padding: 56px 20px 0 20px;
+	position: absolute;
+	top: 100%;
+	-webkit-transition: top .3s ease-out;
+	   -moz-transition: top .3s ease-out;
+	    -ms-transition: top .3s ease-out;
+	     -o-transition: top .3s ease-out;
+	        transition: top .3s ease-out;
+	z-index: 9;
+}
+
+.nsphover .nspHoverOverlay .nspText,
+.nsphover .nspHoverOverlay .nspText a {
+	color: #ffbfab;
+	margin-top: 10px;
+	position: static;
+}
+
+.nsphover .nspHoverOverlay .nspText a:active,
+.nsphover .nspHoverOverlay .nspText a:focus,
+.nsphover .nspHoverOverlay .nspText a:hover {
+	color: #fff;
+}
+
+.nsphover .nspHoverOverlay .nspHeader,
+.nsphover .nspHoverOverlay .nspHeader a {
+	color: #fff;
+}
+
+.nsphover .nspHoverOverlay .nspHeader a:active,
+.nsphover .nspHoverOverlay .nspHeader a:focus,
+.nsphover .nspHoverOverlay .nspHeader a:hover {
+	color: #ffbfab;
+}
+
+.nsphover .nspInfo {
+	position: relative;
+	z-index: 10;
+}
+
+.nsphover .nspInfo2 {
+	left: 15px;
+	position: absolute;
+	z-index: 10;
+}
+
+.nsphover .nspHoverOverlay.active {
+	top: 0;
+}
+
+.nsphover .nspInfo1 {
+	-webkit-transition: all .3s ease-out;
+	   -moz-transition: all .3s ease-out;
+	    -ms-transition: all .3s ease-out;
+	     -o-transition: all .3s ease-out;
+	        transition: all .3s ease-out;
+}
+
+.nsphover .nspInfo1.active {
+	color: #fff;
+	margin-left: 20px;
+}
+
+/*
+ * Tabs GK5 Module
+ */
+.gkTabsGK5 {
+    position: relative;
+    overflow: hidden;
+}
+.gkTabsWrap.vertical ol li {
+    cursor: pointer;
+    float: left;
+    line-height: 14px;
+    list-style-type: none;
+    height: 14px;
+    padding: 0 25px 0 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #a3a3a3;
+    text-transform: uppercase;
+}
+.gkTabsWrap.vertical ol li.active,
+.gkTabsWrap.vertical ol li.active:hover {
+    color: #1c1c1c;
+}
+.gkTabsWrap.vertical ol li.active::after {
+    content: "";
+    clear: both;
+    display: block;
+    float: left;
+    height: 2px;
+    margin-left: -14px;
+    position: absolute;
+    top: 38px;
+    width: 100%;
+    z-index: 2;
+}
+.gkTabsWrap.vertical ol li:hover { 
+	color: #1c1c1c; 
+}
+.gkTabsContainer {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+}
+.gkTabsItem {
+    background: #fff;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+    left: -9999px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.gkTabsItem.active {
+    left: 0;
+    position: relative;
+    z-index: 2;
+}
+.gkTabsNav {
+    background: transparent;
+    margin: 8px 0 32px 0;
+    min-height: 14px;
+}
+
+/* Weather Module */
+.gkwMainRight h2 { 
+    font-size: 32px;
+}
+.gkwDay { 
+    color: #363636; 
+	font-style: normal !important; 
+	font-size: 12px;
+}
+.gkwTemp { 
+    color: #EF8217
+}
+.dark .gkwDay { 
+    color: #fff
+}
+.dark ul.gkwNextDays { 
+    border-top: 1px solid #444; 
+	margin: 12px 0; 
+	padding: 16px 0 0
+}
+.dark div.gkwFday { 
+    border-color: #444
+}
+
+
+/* NSP Portal Mode 7 */
+.nspMainPortalMode7 {
+    position: relative;
+    overflow: hidden;
+}
+.nspMainPortalMode7 .nspArtsScroll {
+    width: 20000px!important;
+}
+.nspMainPortalMode7 .nspArts {
+    width: 100%;
+}
+.nspMainPortalMode7 .nspImages {
+    padding: 0 46px;
+}
+.nspMainPortalMode7 .nspArts,
+.nspMainPortalMode7 .nspArt {
+    overflow: hidden
+}
+.nspMainPortalMode7 .nspArt {
+    float: left;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+        -ms-box-sizing: content-box;
+         -o-box-sizing: content-box;
+            box-sizing: content-box;
+}
+.nspMainPortalMode7 .nspArt img {
+    margin: 0!important;
+}
+.nspMainPortalMode7 .nspArt .nspImageGallery a {
+    display: block;
+    overflow: hidden;
+}
+.nspMainPortalMode7 .nspArt:hover {
+    cursor: pointer
+}
+.nspMainPortalMode7 .nspArt:hover .nspHeader a {
+    color: #EF8217
+}
+.nspMainPortalMode7 .nspHeader {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 5px 0!important;
+    color: #b6b6b6;
+    font-size: 13px;
+    font-weight: 600;
+}
+.nspMainPortalMode7 .nspHeader a {
+    color: #b6b6b6!important;
+}
+.nspMainPortalMode7 .nspHeader a:active,
+.nspMainPortalMode7 .nspHeader a:focus,
+.nspMainPortalMode7 .nspHeader a:hover {
+    color: #fff!important;
+}
+.nspMainPortalMode7 .nspText {
+	color: #696969;
+	font-size: 11px;
+}
+.nspMainPortalMode7 .nspArt {
+	background: #2b2b2b;
+	border: 1px solid #2a2a2a;
+	-webkit-border-radius: 1px;
+	   -moz-border-radius: 1px;
+	        border-radius: 1px;
+	-webkit-box-shadow: inset 0 0 27px rgba(0, 0, 0, 0.75);
+	   -moz-box-shadow: inset 0 0 27px rgba(0, 0, 0, 0.75);
+	    -ms-box-shadow: inset 0 0 27px rgba(0, 0, 0, 0.75);
+	     -o-box-shadow: inset 0 0 27px rgba(0, 0, 0, 0.75);
+	        box-shadow: inset 0 0 27px rgba(0, 0, 0, 0.75);
+	margin-right: 25px;
+    padding: 0;
+    -webkit-transition: background .3s ease-out;
+       -moz-transition: background .3s ease-out;
+        -ms-transition: background .3s ease-out;
+         -o-transition: background .3s ease-out;
+            transition: background .3s ease-out;
+}
+.nspMainPortalMode7 .nspArt:hover {
+	background: #363636;
+}
+.nspMainPortalMode7 .nspArt > div {
+    padding: 0;
+    position: relative;
+}
+.nspMainPortalMode7 .nspArt > div > div {
+    padding: 0
+}
+.nspMainPortalMode7 .nspPrev,
+.nspMainPortalMode7 .nspNext {
+    height: 26px;
+    width: 26px;
+    display: block;
+    background: transparent url('../images/style1/nsp_portal_mode_7_interface.png') no-repeat 0 0;
+    text-indent: -999em;
+    margin-top: -13px;
+    cursor: pointer;
+}
+.nspMainPortalMode7 .nspPrev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+}
+.nspMainPortalMode7 .nspNext {
+    background-position: -26px 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+}
+.nspMainPortalMode7 .nspPrev:hover {
+    background-position: 0 -26px
+}
+.nspMainPortalMode7 .nspNext:hover {
+    background-position: -26px -26px
+}
+.nspMainPortalMode7::selection,
+.nspMainPortalMode7::selection {
+    background: transparent!important
+}
+.nspMainPortalMode7::-moz-selection,
+.nspMainPortalMode7::-moz-selection {
+    background: transparent!important
+}
+.nspMainPortalMode7::-webkit-selection,
+.nspMainPortalMode7::-webkit-selection {
+    background: transparent!important
+}
+/* make element unvisible */
+.nspMainPortalMode7 .unvisible {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}

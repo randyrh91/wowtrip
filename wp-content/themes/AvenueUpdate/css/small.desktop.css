@@ -1,0 +1,72 @@
+/*
+#------------------------------------------------------------------------
+# News - December Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+ 
+.gkPage,
+#gkBottom1,
+#gkBottom2,
+#gkFooter {
+	margin: 0 10px!important;
+}
+
+#gkPageContent {
+	width: auto;
+}
+
+.gkMenu > ul > li > a {
+	padding: 0 7px;
+}
+
+#gkTopMenu {
+	width: 100%;
+}
+
+#gkSocial {
+	clear: both;
+	/*margin-top: 10px;*/
+}
+
+#gkSearch {
+	float: left;
+	/*margin-top: 10px;*/
+}
+
+.box {
+	padding: 10px;
+}
+
+.menu li {
+	margin: 0 -10px;
+}
+
+.box .header {
+	padding-bottom: 8px;
+}
+
+#gkFooterNav {
+	float: none;
+	text-align: center;
+	width: 100%;
+}
+
+#gkFooterNav ul {
+	display: inline-block;
+	text-align: center;
+}
+
+#gkFooterNav ul li {
+	display: inline-block;
+	float: none;
+}
+
+#gkCopyrights {
+	clear: both;
+	float: none;
+	text-align: center;
+}

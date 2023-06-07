@@ -1,0 +1,296 @@
+.itemTags li {
+    float: left;
+    margin-right: 10px;
+}
+
+.gkMenu > ul > li > a:hover, .dropdown-menu > li > a:hover {
+    text-decoration: none !important;
+}
+
+.itemsCategory {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.itemBody {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+#mainContainer {
+    padding-bottom: 25px;
+}
+
+/* TopBar */
+#pageTop {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#gkBannerTop {
+    padding: 5px 10px;
+}
+.imagenCarousel{
+    width:120px;
+    height:80px;
+    background-size: cover;
+}
+
+#gkBannerTop .gkCarousel{
+    float: left;
+    overflow: hidden;
+    height: 140px;
+    position: relative;
+    /*width: 995px;*/
+}
+
+#gkBannerTop .gkCarousel .gkCarouselItems > .gkItemCarousel {
+    width: 305px;
+    display: inline-flex;
+    box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.2);
+    background: #2fa4e7;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    margin: 11px;
+    height: 120px;
+}
+/*#gkBannerTop .gkCarousel .gkCarouselItems > .gkItemCarousel:first-child {*/
+    /*margin-left: -10px;*/
+/*}*/
+
+.gkCarouselItems {
+    max-height: 140px;
+    width: 4000px;
+    position: absolute;
+    z-index: 0;
+}
+#imagCarouselSelect {
+    box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.8); border-radius: 10px; height: 135px; background-size: cover;
+}
+#imagCarouselSelect>h2 {
+    position: relative;
+    float: left;
+    top: 20px;
+    left: 10px;
+}
+.no-padd{
+    padding-right: 0!important;
+}
+#gkBannerTop .gkCarousel .gkCarouselItems > .gkItemCarousel h2 {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+#gkSelectBanner h2 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#gkBannerTop .gkCarousel .gkCarouselItems > .gkItemCarousel > div {
+    margin: 10px;
+}
+
+#gkBannerTop .gkCarousel .gkCarouselItems > .gkItemCarousel p, #gkSelectBanner p {
+    margin: 0 !important;
+    color: #000000;
+}
+
+#gkSelectBanner p {
+    font-size: 14px;
+}
+
+#search_word, #search_type {
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     color: #777;
+     font-size: 12px;
+     height: 32px;
+     line-height: 33px;
+     max-width: 100%!important;
+     padding: 0 12px;
+    border: 1px solid #157AB5;
+}
+
+#search_word {
+    font-weight: bold;
+}
+
+/*Trabajando con el Footer*/
+#gkFooter {
+    background: #F9F9F9;
+    border-top: 1px solid #e5e5e5 !important;
+    width: 100%;
+    bottom: -100px;
+    position: fixed;
+}
+
+/*Trabajando en la portada*/
+#itemListLeading > div.itemContainer {
+    /*border-right: solid 1px #c0c0c0;*/
+}
+
+#gkContentCarousel .izquierda_flecha {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -30px;
+    opacity: 0.5;
+}
+
+#gkContentCarousel .derecha_flecha {
+    position: absolute;
+    right: -3px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -30px;
+    opacity: 0.5;
+}
+.imagenDeluxe{
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+}
+.tituloBlock {
+    text-align: center;
+}
+.labelExcursion{
+    margin-bottom: 30px!important;
+    color: #EF8217;
+    text-align: center;
+}
+#bienvenidos{
+    color: #EF8217;
+}
+.textoDescrip, .textoServicios{
+    color: #EF8217;
+    margin: 10px 0 5px 0;
+}
+.infoFooter{
+    box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.2);
+    background: #2fa4e7;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    height: inherit;
+}
+.content .mostread-left li a, .content .mostread-right li a{
+    color: #ffffff;
+    float: left;
+    width: 50%;
+}
+.footerTituloSocial{
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 25px;
+}
+.labelInfoInic{
+    color: #EF8217;
+}
+.labelSmollDesc{
+    margin-bottom: 40px!important;
+    color: #EF8217;
+}
+.labelCant{
+    color: #ffffff;
+}
+
+/*Los estilos de el formulario por pasos*/
+/*Mios*/
+.steps .navbar-inner .row-fluid .span3{
+    float: left;
+    margin: 10px;
+    font-size: 20px;
+}
+.steps .navbar-inner .row-fluid .span3 a{
+    color: darkgrey!important;
+}
+.tab-pane h2{
+    text-align: center;
+    color: #EF8217;
+}
+.progress-bar-default .bar{
+    background: #EF8217 repeat-x;
+}
+.progress-bar-default{
+    background-color: darkgrey;
+}
+.progress .bar {
+    float: left;
+    height: 100%;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    transition: width 0.6s ease;
+}
+.control-group{
+    margin-bottom: 20px;
+}
+.control-label{
+    float: left;
+    width: 160px;
+    padding-top: 5px;
+    text-align: right;
+    margin-right: 10px;
+}
+/*Fin mios*/
+.form-wizard .steps {
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+.form-wizard .steps .navbar-inner {
+    background: #fff none !important;
+    filter: none !important;
+    border: 0;
+    box-shadow: none !important;
+}
+.navbar-inner {
+    min-height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.navbar .nav {
+    position: relative;
+    left: 0;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.navbar .nav>li {
+    float: left;
+}
+.nav {
+    list-style: none;
+}
+.form-wizard .steps .navbar-inner li a {
+    background: #fff none !important;
+    filter: none !important;
+    border: 0px;
+    box-shadow: none !important;
+}
+form.validateEngine input,
+form.validateEngine select,
+form.validateEngine textarea {
+    width: 100%;
+    border: none;
+    border-bottom: #EF8217 1px solid;
+    color: #0c0c0c;
+    font-weight: bold;
+    font-size: 14px;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+    color: #555;
+    text-decoration: none;
+}

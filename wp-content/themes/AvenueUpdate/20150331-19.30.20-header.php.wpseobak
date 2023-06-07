@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+    <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/listing.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/animate.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/owl.carousel.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/owl.transitions.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.css" media="screen" />
+    <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
+    <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+
+    <?php
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('bxslider', get_stylesheet_directory_uri() .'/js/jquery.bxSlider.min.js');
+    wp_enqueue_script('superfish', get_stylesheet_directory_uri() .'/js/superfish.js');
+    wp_enqueue_script('effects', get_stylesheet_directory_uri() .'/js/effects.js');
+    wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() .'/js/bootstrap.min.js');
+
+    wp_enqueue_script('owl', get_stylesheet_directory_uri() .'/js/owl.carousel.min.js');
+
+    wp_enqueue_script('isotope', get_stylesheet_directory_uri() .'/js/jquery.isotope.js');
+    wp_enqueue_script('scripts', get_stylesheet_directory_uri() .'/js/scripts.js');
+    ?>
+
+    <?php wp_get_archives('type=monthly&format=link'); ?>
+    <?php //comments_popup_script(); // off by default ?>
+
+    <?php
+    if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
+    wp_head();
+    ?>
+
+</head>
+<?php
+$navclass = "nav-no-top";
+$bodyclass = "padding-top45";
+$ishome = false;
+if(is_home() == 1){
+    //home
+    //ver bien como saber si estoy en el home o no
+    $navclass = "nav-top";
+    $bodyclass = "";
+    $ishome = true;
+}
+
+?>
+<body class="<?php echo $bodyclass; ?>">
+
+
+<nav class="navbar navbar-default navbar-fixed-top <?php echo $navclass; ?>" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="topLogo">
+                <a href="#">
+                    <img src="<?php echo get_stylesheet_directory_uri()?>/images/logo.png" width="176" height="50" alt="Reviews of Hotels, Flights and Vacation Rentals">
+                </a>
+            </span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <?php wp_nav_menu( array( 'container_id' => '', 'theme_location' => 'primary','menu_class'=>'','fallback_cb'=> 'fallbackmenu' ) ); ?>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<?php
+if($ishome) :
+?>
+
+<!--<div class="img-top-container">-->
+<!--    <div class="container" style="margin-top: -216px;">-->
+<!--        <div class="search-over-img">-->
+<!--            <h1 class="animated fadeInDown fast">Find Your <strong>Perfect Trip</strong> to <strong>Cuba</strong> with<br> <strong>Environmental values</strong> in <strong>Cienaga de Zapata</strong></h1>-->
+<!--            <p class="sub-text animated fadeInDown fast">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>-->
+<!---->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <img src="--><?php //echo get_stylesheet_directory_uri()?><!--/images/img-top.jpg" class="img-top img-responsive" alt="Find Your Perfect Trip to Cuba"/>-->
+<!--</div>-->
+
+    <section id="main-slider">
+        <div class="owl-carousel">
+            <div class="item" style="background-image: url(<?php echo get_stylesheet_directory_uri()?>/images/img-top.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="carousel-content">
+                                    <h2><span>Multi</span> is the best Onepage html template</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
+                                    <a class="btn btn-primary btn-sm" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+            <div class="item" style="background-image: url(<?php echo get_stylesheet_directory_uri()?>/images/img-top.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="carousel-content">
+                                    <h2>Beautifully designed <span>free</span> one page template</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
+                                    <a class="btn btn-primary btn-sm" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+        </div><!--/.owl-carousel-->
+    </section><!--/#main-slider-->
+
+
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery(window).scroll(function() {
+                if(jQuery(this).scrollTop() != 0) {
+                    jQuery('nav').removeClass('nav-top');
+                    jQuery('nav').addClass('nav-no-top');
+                } else {
+                    jQuery('nav').removeClass('nav-no-top');
+                    jQuery('nav').addClass('nav-top');
+                }
+            });
+        })
+    </script>
+
+    <div id="conoce-cz" class="padding-top-bottom90">
+        <div class="container">
+            <div class="row header">
+                <div class="col-md-12">
+                    <h2 class="section-title">CONOCE CIÉNAGA DE ZAPATA</h2>
+                    <p>Atractivo Natural por EXELENCIA.</p>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-8 img-container">
+                    <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri()?>/images/img-top.jpg" alt="...">
+                </div>
+                <div class="col-md-4">
+                    <ul class="about">
+                        <li>
+                            <i class="fa fa-user"></i>
+                            <label>Habitantes</label>
+                            <span class="value">26 554</span>
+                            <div class="clear"></div>
+                        </li>
+
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                            <label>Extension territorial</label>
+                            <span class="value">24 875 metros</span>
+                            <div class="clear"></div>
+                        </li>
+
+                        <li>
+                            <i class="fa fa-ban"></i>
+                            <label>Lorem ipsum</label>
+                            <span class="value">Lorem ipsum</span>
+                            <div class="clear"></div>
+                        </li>
+
+                        <li>
+                            <i class="fa fa-ban"></i>
+                            <label>Lorem ipsum</label>
+                            <span class="value">Lorem ipsum</span>
+                            <div class="clear"></div>
+                        </li>
+
+                        <li>
+                            <i class="fa fa-ban"></i>
+                            <label>Lorem ipsum</label>
+                            <span class="value">Lorem ipsum</span>
+                            <div class="clear"></div>
+                        </li>
+
+                        <li>
+                            <i class="fa fa-archive"></i>
+                            <label>Categorias</label>
+                            <span class="value">Reserva de la Biosfera, Sitio RAMSAR</span>
+                            <div class="clear"></div>
+                        </li>
+
+                    </ul>
+
+                    <a class="btn btn-primary btn-sm pull-right" href="#">Read More</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="row header">
+                <div class="col-md-12">
+                    <h2 class="section-title">actividades tur&iacute;sticas </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+            </div>
+
+
+
+            <div class="text-center margin-top25">
+                <ul class="portfolio-filter caegories">
+                    <li><a class="active" href="#" data-filter="*">Todas</a></li>
+                    <li><a href="#" data-filter=".buceo" class="">Buceo</a></li>
+                    <li><a href="#" data-filter=".pesca" class="">Pesca deportiva</a></li>
+                    <li><a href="#" data-filter=".aves" class="">Observac&iacute;on de Aves</a></li>
+                </ul><!--/#portfolio-filter-->
+            </div>
+
+            <div id="portfolio-items" class="row isotope">
+
+                <?php
+                $my_query = new WP_Query('category_name=Tourist Options');
+                while ($my_query->have_posts()) : $my_query->the_post();
+                ?>
+
+                    <div class="col-md-4 col-sm-4 isotope-item <?php echo get_post_meta($post->ID, 'wtf_class', true); ?>">
+                        <a href="<?php the_permalink(); ?>" class="thumbnail">
+                            <img src="<?php bloginfo('stylesheet_directory'); ?>/timthumb.php?src=<?php get_image_url(); ?>&amp;h=300&amp;w=430&amp;zc=1" alt="...">
+                            <div class="img-info animated fadeInUp fast">
+                                <h3><?php echo $post->post_title; ?></h3>
+                                <p><?php echo $post->post_excerpt; ?></p>
+                                <span class="post-view"><i class="fa fa-eye"></i></span>
+                                <span class="post-map"><i class="fa fa-map-marker"></i></span>
+                            </div>
+                        </a>
+                    </div>
+
+                <?php endwhile; ?>
+
+
+
+            </div>
+
+        </div><!--/.container-->
+    </div>
+
+<?php endif; ?>
+
+<!---->
+<!--<div id="masthead">-->
+<!---->
+<!--    <div id="head">-->
+<!---->
+<!--    <div id="top" class="clearfix">-->
+<!--        <div id="blogname">-->
+<!---->
+<!--        --><?php //if (get_theme_mod(FT_scope::tool()->optionsName . '_logo', '') != '') { ?>
+<!--                    <h1 class="site-title logo"><a class="mylogo" rel="home" href="--><?php //bloginfo('siteurl');?><!--/" title="--><?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?><!--"><img relWidth="--><?php //echo intval(get_theme_mod(FT_scope::tool()->optionsName . '_maxWidth', 0)); ?><!--" relHeight="--><?php //echo intval(get_theme_mod(FT_scope::tool()->optionsName . '_maxHeight', 0)); ?><!--" id="ft_logo" src="--><?php //echo get_theme_mod(FT_scope::tool()->optionsName . '_logo', ''); ?><!--" alt="" /></a></h1>-->
+<!--        --><?php //} else { ?>
+<!--                    <h1 class="site-title logo"><a id="blogname" rel="home" href="--><?php //bloginfo('siteurl');?><!--/" title="--><?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?><!--">--><?php //bloginfo( 'name' ); ?><!--</a></h1>-->
+<!--        --><?php //} ?>
+<!---->
+<!--        </div>-->
+<!---->
+<!--        <div id="contactlist">-->
+<!--            <div class="rphone">-->
+<!--            <span>Call us</span><br/>-->
+<!--            <p>--><?php //$my_phone =get_option('aven_my_phone'); echo $my_phone ?><!--</p>-->
+<!--            </div>-->
+<!--            <div class="rmail">-->
+<!--            <span>Mail us</span><br/>-->
+<!--            <p>--><?php //$my_mail =get_option('aven_my_email'); echo $my_mail ?><!--</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--    </div>-->
+<!---->
+<!--    <div id="botmenu">-->
+<!--        --><?php //wp_nav_menu( array( 'container_id' => 'submenu', 'theme_location' => 'primary','menu_class'=>'sfmenu','fallback_cb'=> 'fallbackmenu' ) ); ?>
+<!--        --><?php //include (TEMPLATEPATH . '/searchform.php'); ?>
+<!--    </div>-->
+<!---->
+<!--    </div>-->
+<!---->
+<!--</div>-->
+
+
+<div id="wrapper" class="container">
+<div id="casing">
+

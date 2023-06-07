@@ -1,0 +1,231 @@
+/*
+#------------------------------------------------------------------------
+# News - December Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2012 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+ 
+/* Style 4 */
+
+/* template.css */
+a:hover,
+a:active,
+a:focus {
+	color: #8c7a71;
+}
+#gkLogo.cssLogo {
+	background-image: url('../images/style4/logo.png');
+}
+#gkLogin:active,
+#gkLogin:focus,
+#gkLogin:hover,
+#gkRSS:active,
+#gkRSS:focus,
+#gkRSS:hover {
+	background-color: #8c7a71;
+}
+#gkTopMenu li a:active,
+#gkTopMenu li a:focus,
+#gkTopMenu li a:hover,
+li.tagged-under a:hover,
+li.tagged-under a:active,
+li.tagged-under a:focus {
+	color: #8c7a71;
+}
+.gkTwitter,
+.gkFb,
+.gkPinterest,
+.gkGplus {
+	background-image: url('../images/style4/social_icons.png');
+}
+.gkTwitter:active,
+.gkTwitter:focus,
+.gkTwitter:hover,
+.gkFb:active,
+.gkFb:focus,
+.gkFb:hover,
+.gkPinterest:active,
+.gkPinterest:focus,
+.gkPinterest:hover,
+.gkGplus:active,
+.gkGplus:focus,
+.gkGplus:hover {
+	background-image: url('../images/style4/social_icons.png');
+}
+#gkFooter {
+	border-top: 2px solid #8c7a71;
+}
+.box.dark a:active,
+.box.dark a:focus,
+.box.dark a:hover {
+	color: #8c7a71;
+}
+.box.color .header {
+	color: #8c7a71;
+}
+.box.headlines .header {
+	background: #8c7a71;
+}
+.box.headlines .header::after {
+	background-image: url('../images/style4/highlight_bg.png');
+}
+.gkUsermenu {
+	border-top: 3px solid #8c7a71;
+}
+
+/* joomla.css */
+
+button,
+.button,
+input.button,
+span.button,
+button.button,
+div.button,
+input[type="submit"],
+input[type="button"],
+.pagenav-prev a,
+.pagenav-next a,
+.pager li.next a,
+.pager li.previous a,
+.pager li a,
+.readon,
+.pagination ul li a,
+.pagination ul li span {
+	background: #8c7a71;
+}
+p.img_caption {
+	background: #8c7a71;
+}
+.tip-title {
+	background: #8c7a71;
+}
+div.bannerfooter {
+	color: #8c7a71;
+}
+.autocompleter-queried {
+	color: #8c7a71!important
+}
+.menu li:hover {
+	background-color: #8c7a71
+}
+th a:active,
+th a:focus,
+th a:hover,
+article header h1 a:hover,
+article header h2 a:hover {
+	color: #8c7a71
+}
+
+/* gk_stuff.css */
+.nspPagination li:hover,
+.nspPagination li.active { 
+	background: #8c7a71;
+}
+.nspNext,
+.nspPrev {
+    background-image: url('../images/style4/nsp_interface.png');
+}
+.nspArt h4.nspHeader a:active,
+.nspArt h4.nspHeader a:focus,
+.nspArt h4.nspHeader a:hover { 
+	color: #8c7a71; 
+}
+.nspArt p.nspInfo a:active,
+.nspArt p.nspInfo a:focus,
+.nspArt p.nspInfo a:hover { 
+	color: #8c7a71; 
+}
+.dark .nspLinks ul li h4 a:active,
+.dark .nspLinks ul li h4 a:focus,
+.dark .nspLinks ul li h4 a:hover { 
+	color: #8c7a71; 
+}
+.dark .nspArt h4.nspHeader a:active,
+.dark .nspArt h4.nspHeader a:focus,
+.dark .nspArt h4.nspHeader a:hover { 
+	color: #8c7a71; 
+}
+.dark .nspNext,
+.dark .nspPrev { 
+	background-image: url('../images/style4/nsp_interface.png'); 
+}
+.box.header .nspImageWrapper h4:hover {
+	background: #8c7a71;
+}
+.box.header .nspLinks .nspLinkScroll1 div ul li:hover {
+   	background: #8c7a71;
+}
+.nsphover .nspInfo2 {
+	background: #8c7a71;
+}
+.nsphover .nspHoverOverlay {
+	background: #8c7a71;
+}
+.nsphover .nspHoverOverlay .nspText,
+.nsphover .nspHoverOverlay .nspText a {
+	color: #d5cbc6;
+}
+.nsphover .nspHoverOverlay .nspHeader a:active,
+.nsphover .nspHoverOverlay .nspHeader a:focus,
+.nsphover .nspHoverOverlay .nspHeader a:hover {
+	color: #d5cbc6;
+}
+.gkwTemp { 
+    color: #DBAE43;
+}
+.nspMainPortalMode7 .nspArt:hover .nspHeader a {
+    color: #8c7a71;
+}
+.nspMainPortalMode7 .nspPrev,
+.nspMainPortalMode7 .nspNext {
+    background-image: url('../images/style4/nsp_portal_mode_7_interface.png');
+}
+
+/* menu.css */
+
+.gkMenu > ul > li:hover > a,
+.gkMenu > ul > li:active > a,
+.gkMenu > ul > li:focus > a {
+	background: #8c7a71;
+}
+
+/* k2.css */
+h1 > sup {
+	background: #8c7a71;
+}
+.k2TagCloudBlock a,
+div.tags a {
+	background-image: url('../images/style4/tag_bullets.png');
+}
+.itemAttachmentsBlock {
+	background: url('../images/style4/typography/tips.png') no-repeat 16px 8px #FFFEF4;
+	border: 1px solid #EAE8CC;
+}
+.userView .itemAuthorData a:hover {
+	color: #8c7a71
+}
+.commentLink {
+	color: #8c7a71;
+}
+#itemListLinks li {
+	background-image: url('../images/style4/typography/bullet-square2.png');
+}
+.k2CalendarBlock table.calendar tr td.calendarToday {
+	background: #8c7a71;
+}
+table.calendar tr td.calendarTodayLinked a {
+	color: #8c7a71;
+}
+
+.calendarNavLink {
+	color: #8c7a71;
+}
+
+.calendarNavLink a:active,
+.calendarNavLink a:focus,
+.calendarNavLink a:hover {
+	color: #333!important;
+}
